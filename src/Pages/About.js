@@ -78,7 +78,7 @@ function About() {
 				<div className="modal-dialog" role="document">
 					<div className="modal-content">
 						<div className="modal-header">
-							NIFEM MDR
+							NIFEM Multidynamic Resources Ltd.
 							<button
 								type="button"
 								className="close"
@@ -154,7 +154,7 @@ function About() {
 							<p style={{ marginTop: 20 }}>
 								<i>
 									<b>
-										NIFEM MDR is a full-service Agro-allied agency that aims to
+										NIFEM Multidynamic Resources Ltd. is a full-service Agro-allied agency that aims to
 										build brands through creative stories.
 									</b>
 								</i>
@@ -402,7 +402,7 @@ function About() {
 				</div>
 				<div className="w3_agileits_footer_copy">
 					<div className="container">
-						<p>&#169; 2022 NIFEM MDR</p>
+						<p>&#169; 2022 NIFEM Multidynamic Resources Ltd.</p>
 					</div>
 				</div>
 			</div>

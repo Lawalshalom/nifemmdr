@@ -78,7 +78,7 @@ function Contact() {
 				<div className="modal-dialog" role="document">
 					<div className="modal-content">
 						<div className="modal-header">
-							NIFEM MDR
+							NIFEM Multidynamic Resources Ltd.
 							<button
 								type="button"
 								className="close"
@@ -191,7 +191,7 @@ function Contact() {
 						</div>
 						<div className="col-md-4 w3_agile_mail_right">
 							<div className="w3_agileits_mail_right_grid">
-								<h4>NIFEM MDR</h4>
+								<h4>NIFEM MULTIDYNAMIC RESOURCES LTD.</h4>
 								<p>
 									Exploring the dynamism of nature for all-round benefits of
 									mankind.
@@ -348,7 +348,7 @@ function Contact() {
 				</div>
 				<div className="w3_agileits_footer_copy">
 					<div className="container">
-						<p>&#169; 2022 NIFEM MDR</p>
+						<p>&#169; 2022 NIFEM Multidynamic Resources Ltd.</p>
 					</div>
 				</div>
 			</div>

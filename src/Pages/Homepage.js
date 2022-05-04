@@ -111,7 +111,7 @@ function Homepage() {
 				<div className="modal-dialog" role="document">
 					<div className="modal-content">
 						<div className="modal-header">
-							NIFEM MDR
+							NIFEM Multidynamic Resources Ltd.
 							<button
 								type="button"
 								className="close"
@@ -339,7 +339,7 @@ function Homepage() {
 								</h4>
 								<p>
 									Although maitake mushroom has been used in Japan and China for
-									thousands of years, it has only gained popularity in Nigeria
+									thousands of years, it has only gained popularity in Nigeria in recent years
 									and other part of the world over the last twenty years. People
 									are praising this mushroom for its promises of health,
 									vitality, and longevity.
@@ -491,7 +491,7 @@ function Homepage() {
 				</div>
 				<div className="w3_agileits_footer_copy">
 					<div className="container">
-						<p>&#169; 2022 NIFEM MDR</p>
+						<p>&#169; 2022 NIFEM Multidynamic Resources Ltd.</p>
 					</div>
 				</div>
 			</div>

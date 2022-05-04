@@ -93,9 +93,15 @@ function Services() {
 								<p>
 									<b>January Window (January - April): </b>
 									Window closes on 15th of January of every year.
+								</p>
+								<p>
 									<b>Investment Proceed: </b> 15% ROI + amount invested
 									(capital) to be paid on the last day of April of every year.
+								</p>
+								<p>
 									<b>Duration: </b> 120 days.
+								</p>
+								<p>
 									<i>
 										"Agriculture is our wisest pursuit, because it will in the
 										end contribute most to real wealth, good morals &
@@ -132,9 +138,15 @@ function Services() {
 								<p>
 									<b>May Window (May - August): </b>
 									Window closes on 15th of May of every year.
+								</p>
+								<p>
 									<b>Investment Proceed: </b> 15% ROI + amount invested
 									(capital) to be paid on the last day of August of every year.
+								</p>
+								<p>
 									<b>Duration: </b> 120 days.
+								</p>
+								<p>
 									<i>
 										"Agriculture is our wisest pursuit, because it will in the
 										end contribute most to real wealth, good morals &
@@ -237,7 +249,7 @@ function Services() {
 							<div className="col-xs-8 w3_agile_services_grid_right">
 								<h4>Agricultural Investments</h4>
 								<p>
-									As a AgroFinance institution, investments are the core of our
+									As an AgroFinance institution, investments are the core of our
 									services, proffering you diverse channels to build financial
 									buoyance.
 								</p>
@@ -254,7 +266,7 @@ function Services() {
 								<h4>Sales Promotion</h4>
 								<p>
 									We love promoting Agricultural products, highlighting their
-									health benefits and tereby boosting awareness and sales.
+									health benefits and thereby boosting awareness and sales.
 								</p>
 							</div>
 							<div className="clearfix"> </div>
@@ -316,7 +328,7 @@ function Services() {
 							<div className="agileinfo_services_bottom_grid2">
 								<p>
 									<b>January Window: </b>
-									Window closes on 15th of January of every year.
+									Window closes on 15th of every month enclosed in the window.
 								</p>
 								<div className="agileits_w3layouts_learn_more hvr-radial-out">
 									<a href="#" data-toggle="modal" data-target="#myBatchAModal">
@@ -335,7 +347,7 @@ function Services() {
 							<div className="agileinfo_services_bottom_grid2">
 								<p>
 									<b>May Window: </b>
-									Window closes on 15th of May of every year.
+									Window closes on 15th of every month enclosed in the window.
 								</p>
 								<div className="agileits_w3layouts_learn_more hvr-radial-out">
 									<a href="#" data-toggle="modal" data-target="#myBatchBModal">
@@ -354,7 +366,7 @@ function Services() {
 							<div className="agileinfo_services_bottom_grid2">
 								<p>
 									<b>September Window: </b>
-									Window closes on 15th of September of every year.
+									Window closes on 15th of every month enclosed in the window.
 								</p>
 								<div className="agileits_w3layouts_learn_more hvr-radial-out">
 									<a href="#" data-toggle="modal" data-target="#myBatchCModal">
@@ -579,7 +591,7 @@ function Services() {
 				</div>
 				<div className="w3_agileits_footer_copy">
 					<div className="container">
-						<p>&#169; 2022 NIFEM MDR</p>
+						<p>&#169; 2022 NIFEM Multidynamic Resources Ltd.</p>
 					</div>
 				</div>
 			</div>
