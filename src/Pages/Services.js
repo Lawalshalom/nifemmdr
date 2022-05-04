@@ -92,7 +92,7 @@ function Services() {
 								<img src="images/4.jpg" alt=" " className="img-responsive" />
 								<p>
 									<b>January Window (January - April): </b>
-									Window closes on 15th of January of every year.
+									Window closes on 15th of every month enclosed in the window.
 								</p>
 								<p>
 									<b>Investment Proceed: </b> 15% ROI + amount invested
@@ -137,7 +137,7 @@ function Services() {
 								<img src="images/4.jpg" alt=" " className="img-responsive" />
 								<p>
 									<b>May Window (May - August): </b>
-									Window closes on 15th of May of every year.
+									Window closes on 15th of every month enclosed in the window.
 								</p>
 								<p>
 									<b>Investment Proceed: </b> 15% ROI + amount invested
@@ -182,7 +182,7 @@ function Services() {
 								<img src="images/4.jpg" alt=" " className="img-responsive" />
 								<p>
 									<b>September Window (September - December): </b>
-									Window closes on 15th of September of every year.
+									Window closes on 15th of every month enclosed in the window.
 								</p>
 								<p>
 									<b>Investment Proceed: </b> 15% ROI + amount invested
