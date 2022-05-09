@@ -96,7 +96,7 @@ function Services() {
 								</p>
 								<p>
 									<b>Investment Proceed: </b> 15% ROI + amount invested
-									(capital) to be paid on the last day of April of every year.
+									(capital) to be paid after 16 weeks (120 days).
 								</p>
 								<p>
 									<b>Duration: </b> 120 days.
@@ -141,7 +141,7 @@ function Services() {
 								</p>
 								<p>
 									<b>Investment Proceed: </b> 15% ROI + amount invested
-									(capital) to be paid on the last day of August of every year.
+									(capital) to be paid after 16 weeks (120 days).
 								</p>
 								<p>
 									<b>Duration: </b> 120 days.
@@ -186,8 +186,7 @@ function Services() {
 								</p>
 								<p>
 									<b>Investment Proceed: </b> 15% ROI + amount invested
-									(capital) to be paid on the last day of December of every
-									year.
+									(capital) to be paid after 16 weeks (120 days).
 								</p>
 								<p>
 									<b>Duration: </b> 120 days.
