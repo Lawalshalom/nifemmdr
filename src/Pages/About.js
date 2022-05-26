@@ -1,84 +1,31 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-/* eslint-disable jsx-a11y/anchor-has-content */
 import React from "react";
+import Footer from "../Components/Footer";
+import Header from "../Components/Header";
 
-function About() {
+function About({ posts }) {
+	const postObj = {};
+	const aboutNewPosts = [];
+
+	posts.forEach((post) => {
+		postObj[post.header] = post;
+		post.header === "New About Page Post" && aboutNewPosts.push(post);
+	});
+
 	return (
 		<div>
-			<div className="banner1">
-				<div className="container">
-					<div className="w3_agileits_banner_main_grid">
-						<div className="w3_agile_logo">
-							<h1>
-								<a href="/">
-									<span>N</span>ifem<i>MDR</i>
-								</a>
-							</h1>
-						</div>
-						<div className="agile_social_icons_banner">
-							<ul className="agileits_social_list">
-								<li>
-									<a href="#" className="w3_agile_facebook">
-										<i className="fa fa-facebook" aria-hidden="true"></i>
-									</a>
-								</li>
-								<li>
-									<a href="#" className="agile_twitter">
-										<i className="fa fa-twitter" aria-hidden="true"></i>
-									</a>
-								</li>
-								<li>
-									<a href="#" className="w3_agile_vimeo">
-										<i className="fa fa-instagram" aria-hidden="true"></i>
-									</a>
-								</li>
-							</ul>
-						</div>
-						<div className="agileits_w3layouts_menu">
-							<div className="shy-menu">
-								<a className="shy-menu-hamburger">
-									<span className="layer top"></span>
-									<span className="layer mid"></span>
-									<span className="layer btm"></span>
-								</a>
-								<div className="shy-menu-panel">
-									<nav
-										className="menu menu--horatio link-effect-8"
-										id="link-effect-8">
-										<ul className="w3layouts_menu__list">
-											<li>
-												<a href="/">Home</a>
-											</li>
-											<li className="active">
-												<a href="/about">About Us</a>
-											</li>
-											<li>
-												<a href="/services">Services</a>
-											</li>
-											<li>
-												<a href="/contact">Contact Us</a>
-											</li>
-										</ul>
-									</nav>
-								</div>
-								<div className="clearfix"> </div>
-							</div>
-						</div>
-						<div className="clearfix"> </div>
-					</div>
-				</div>
-			</div>
+			<Header page="about" />
 
 			<div
 				className="modal video-modal fade"
 				id="myModal"
-				tabindex="-1"
+				tabIndex="-1"
 				role="dialog"
 				aria-labelledby="myModal">
 				<div className="modal-dialog" role="document">
 					<div className="modal-content">
 						<div className="modal-header">
-							NIFEM Multidynamic Resources Ltd.
+							{postObj["Popup Modal"]?.posts[0].title}
 							<button
 								type="button"
 								className="close"
@@ -91,19 +38,8 @@ function About() {
 							<div className="modal-body">
 								<img src="images/4.jpg" alt=" " className="img-responsive" />
 								<p>
-									Our Company, NIFEM MULTIDYNAMIC RESOURCES LIMITED is a
-									standard Mushroom production and services company. Our aim is
-									to establish a sustainable and productive mushroom producing
-									organization that is capable of producing enough mushroom to
-									sustain the investment and also compete favorably with other
-									organizations both locally and internationally. To this end we
-									adopt the best business approach, following our plans
-									efficiently and effectively.
-									<i>
-										"Agriculture is our wisest pursuit, because it will in the
-										end contribute most to real wealth, good morals &
-										happiness."
-									</i>
+									{postObj["Popup Modal"]?.posts[0].body}
+									<i>{postObj["Popup Modal"]?.posts[1].body}</i>
 								</p>
 							</div>
 						</section>
@@ -135,39 +71,27 @@ function About() {
 			<div className="welcome">
 				<div className="container">
 					<h3 className="agileits_w3layouts_head">
-						Why <span>Choose</span> Us
+						{postObj["Landing page"]?.posts[0].title.slice(0, 4)}{" "}
+						<span>{postObj["Landing page"]?.posts[0].title.slice(4, 11)}</span>
+						{postObj["Landing page"]?.posts[0].title.slice(11)}
 					</h3>
 					<div className="w3_agile_image">
 						<img src="images/1.png" alt=" " className="img-responsive" />
 					</div>
 					<p className="agile_para">
-						<b>Mission statement: </b>Exploring the dynamism of nature for
-						all-round benefits of mankind.
+						<b>{postObj["Landing page"]?.posts[0].body.slice(0, 18)}</b>
+						{postObj["Landing page"]?.posts[0].body.slice(18)}
 					</p>
 					<div className="w3ls_news_grids">
 						<div className="col-md-6 w3_agile_about_grid_left">
-							<h3>
-								VISION: To continually improve our operations in order to
-								increase value to customers, enhace the livelihood of our
-								employees and leave a footmark in the society.
-							</h3>
+							<h3>{postObj["Landing page"]?.posts[1].body}</h3>
 							<p style={{ marginTop: 20 }}>
 								<i>
-									<b>
-										NIFEM Multidynamic Resources Ltd. is a full-service Agro-allied agency that aims to
-										build brands through creative stories.
-									</b>
+									<b>{postObj["Landing page"]?.posts[2].title}</b>
 								</i>
 							</p>
 							<p style={{ marginTop: 20 }}>
-								Our Company, NIFEM MULTIDYNAMIC RESOURCES LIMITED is a standard
-								Mushroom production and services company. Our aim is to
-								establish a sustainable and productive mushroom producing
-								organization that is capable of producing enough mushroom to
-								sustain the investment and also compete favorably with other
-								organizations both locally and internationally. To this end we
-								adopt the best business approach, following our plans
-								efficiently and effectively.
+								{postObj["Landing page"]?.posts[2].body}
 							</p>
 						</div>
 						<div className="col-md-6 w3_agile_about_grid_right">
@@ -185,7 +109,7 @@ function About() {
 										{" "}
 									</i>
 									<b style={{ marginLeft: "10px" }}>
-										Market Driven Basic Implementation:{" "}
+										{postObj["Strong Points"]?.posts[0].title}
 									</b>
 								</p>
 								<p
@@ -194,8 +118,7 @@ function About() {
 										opacity: "0.7",
 										marginLeft: "70px",
 									}}>
-									Upholding the spirit of innovation and creativity in shaping a
-									solution that can be accepted by the wider community.
+									{postObj["Strong Points"]?.posts[0].body}
 								</p>
 							</div>
 							<div>
@@ -212,7 +135,9 @@ function About() {
 										style={{ color: "green" }}>
 										{" "}
 									</i>
-									<b style={{ marginLeft: "10px" }}>SEM Implementation: </b>
+									<b style={{ marginLeft: "10px" }}>
+										{postObj["Strong Points"]?.posts[1].title}
+									</b>
 								</p>
 								<p
 									style={{
@@ -220,9 +145,7 @@ function About() {
 										opacity: "0.7",
 										marginLeft: "70px",
 									}}>
-									The services we offer are based on data and analysis that are
-									very precise and focused on the challenges of Agricultural
-									product marketing in Nigeria.
+									{postObj["Strong Points"]?.posts[1].body}
 								</p>
 							</div>
 
@@ -240,7 +163,9 @@ function About() {
 										style={{ color: "green" }}>
 										{" "}
 									</i>
-									<b style={{ marginLeft: "10px" }}>Decrease Industry GAP: </b>
+									<b style={{ marginLeft: "10px" }}>
+										{postObj["Strong Points"]?.posts[2].title}{" "}
+									</b>
 								</p>
 								<p
 									style={{
@@ -248,9 +173,7 @@ function About() {
 										opacity: "0.7",
 										marginLeft: "70px",
 									}}>
-									The services offered are based on sound market decisions so
-									that they can have long-lasting health and financial impact on
-									both investors and consumers.
+									{postObj["Strong Points"]?.posts[2].body}
 								</p>
 							</div>
 						</div>
@@ -261,8 +184,8 @@ function About() {
 			<div className="about-bottom">
 				<div className="container">
 					<h3>
-						<span>Agriculture</span> not only gives riches to a nation, but the
-						only riches she can call her own
+						<span>{postObj["Strong Points"]?.posts[3].body.slice(0, 12)}</span>
+						{postObj["Strong Points"]?.posts[3].body.slice(12)}
 					</h3>
 					<div className="agileits_w3layouts_learn_more agileits_learn_more hvr-radial-out">
 						<a href="#" data-toggle="modal" data-target="#myModal">
@@ -275,16 +198,14 @@ function About() {
 			<div className="welcome">
 				<div className="container">
 					<h3 className="agileits_w3layouts_head">
-						Meet Our <span>Amazing</span> Team
+						{postObj["Team Details"]?.posts[0].title.slice(0, 8)}{" "}
+						<span>{postObj["Team Details"]?.posts[0].title.slice(8, 16)}</span>{" "}
+						{postObj["Team Details"]?.posts[0].title.slice(16)}
 					</h3>
 					<div className="w3_agile_image">
 						<img src="images/1.png" alt=" " className="img-responsive" />
 					</div>
-					<p className="agile_para">
-						We are a team of passionate individuals with vested interest in
-						Agriculture and finance. Our strength is in the summation of the
-						culmulated years of individual experiences in these fields.
-					</p>
+					<p className="agile_para">{postObj["Team Details"]?.posts[0].body}</p>
 					<div className="w3ls_news_grids w3_agileits_team_grids">
 						<div className="col-md-4 w3_agileits_team_grid">
 							<div
@@ -318,94 +239,32 @@ function About() {
 				</div>
 			</div>
 
-			<div className="footer">
-				<div className="container">
-					<div className="w3agile_footer_grids">
-						<div className="col-md-3 agileinfo_footer_grid">
-							<div className="agileits_w3layouts_footer_logo">
-								<h2>
-									<a href="/">
-										<span>N</span>IFEM<i>MDR</i>
-									</a>
-								</h2>
+			{aboutNewPosts.length > 0 &&
+				aboutNewPosts.map((post) => (
+					<div className="welcome">
+						<div className="container">
+							<h3 className="agileits_w3layouts_head">
+								{post.posts[0].title.split(" ")[0]}{" "}
+								<span>{post.posts[0].title.split(" ")[1]}</span>{" "}
+								{post.posts[0].title.split(" ").slice(2)}
+							</h3>
+							<div className="w3_agile_image">
+								<img src="images/1.png" alt=" " className="img-responsive" />
 							</div>
+							<p className="agile_para">{post.posts[0].body}</p>
 						</div>
-						<div className="col-md-6 agileinfo_footer_grid">
-							<h3>Contact Info</h3>
-							<h5 style={{ color: "#fff" }}>
-								Call Us <span>+234-813-446-2512, +234-810-475-6061</span>
-							</h5>
-							<p>
-								Email:{" "}
-								<a href="mailto:nifemmdr@gmail.com">nifemmdr@gmail.com</a>
-							</p>
-							<p>
-								PLOT 2, TOKUNBO OJO STREET, <span> OJOO, IBADAN.</span>
-							</p>
-							<ul className="agileits_social_list">
-								<li>
-									<a href="#" className="w3_agile_facebook">
-										<i className="fa fa-facebook" aria-hidden="true"></i>
-									</a>
-								</li>
-								<li>
-									<a href="#" className="agile_twitter">
-										<i className="fa fa-twitter" aria-hidden="true"></i>
-									</a>
-								</li>
-								<li>
-									<a href="#" className="w3_agile_vimeo">
-										<i className="fa fa-instagram" aria-hidden="true"></i>
-									</a>
-								</li>
-							</ul>
-						</div>
-						<div className="col-md-2 agileinfo_footer_grid agileinfo_footer_grid1">
-							<h3>Navigation</h3>
-							<ul className="w3layouts_footer_nav">
-								<li>
-									<a href="/">
-										<i
-											className="fa fa-long-arrow-right"
-											aria-hidden="true"></i>
-										Home
-									</a>
-								</li>
-								<li>
-									<a href="/about">
-										<i
-											className="fa fa-long-arrow-right"
-											aria-hidden="true"></i>
-										About Us
-									</a>
-								</li>
-								<li>
-									<a href="/services">
-										<i
-											className="fa fa-long-arrow-right"
-											aria-hidden="true"></i>
-										Services
-									</a>
-								</li>
-								<li>
-									<a href="/contact">
-										<i
-											className="fa fa-long-arrow-right"
-											aria-hidden="true"></i>
-										Contact Us
-									</a>
-								</li>
-							</ul>
-						</div>
-						<div className="clearfix"> </div>
+						{post.posts?.slice(1).map((onePost) => (
+							<div className="w3_agileits_welcome_grids">
+								<h4 style={{ marginLeft: "15%" }}>
+									<b>{onePost.title}</b>
+								</h4>
+								<p style={{ marginLeft: "15%" }}>{onePost.body}</p>
+							</div>
+						))}
 					</div>
-				</div>
-				<div className="w3_agileits_footer_copy">
-					<div className="container">
-						<p>&#169; 2022 NIFEM Multidynamic Resources Ltd.</p>
-					</div>
-				</div>
-			</div>
+				))}
+
+			<Footer />
 		</div>
 	);
 }
