@@ -182,7 +182,11 @@ function Contact({ posts }) {
 									</li>
 								</ul>
 								<div className="w3_agileits_mail_right_grid_pos">
-									<img src="images/22.jpg" alt=" " className="img-responsive" />
+									<img
+										src={postObj["Contact Intro"]?.pictures[0].url}
+										alt=" "
+										className="img-responsive"
+									/>
 								</div>
 							</div>
 							<div className="w3_agileits_mail_right_grid_main">

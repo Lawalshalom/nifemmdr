@@ -37,9 +37,7 @@ function Services({ posts }) {
 	};
 
 	const postObj = {};
-
 	const servicesNewPosts = [];
-
 	posts.forEach((post) => {
 		postObj[post.header] = post;
 		post.header === "New Services Page Post" && servicesNewPosts.push(post);
@@ -132,7 +130,11 @@ function Services({ posts }) {
 						</div>
 						<section>
 							<div className="modal-body">
-								<img src="images/4.jpg" alt=" " className="img-responsive" />
+								<img
+									src={postObj["Batch A details"]?.pictures[0].url}
+									alt=" "
+									className="img-responsive"
+								/>
 								<p>
 									<b> {postObj["Batch A details"]?.posts[0].title}</b>{" "}
 									{postObj["Batch A details"]?.posts[0].body}
@@ -174,7 +176,11 @@ function Services({ posts }) {
 						</div>
 						<section>
 							<div className="modal-body">
-								<img src="images/4.jpg" alt=" " className="img-responsive" />
+								<img
+									src={postObj["Batch B details"]?.pictures[0].url}
+									alt=" "
+									className="img-responsive"
+								/>
 								<p>
 									<b> {postObj["Batch B details"]?.posts[0].title}</b>{" "}
 									{postObj["Batch B details"]?.posts[0].body}
@@ -216,7 +222,11 @@ function Services({ posts }) {
 						</div>
 						<section>
 							<div className="modal-body">
-								<img src="images/4.jpg" alt=" " className="img-responsive" />
+								<img
+									src={postObj["Batch C details"]?.pictures[0].url}
+									alt=" "
+									className="img-responsive"
+								/>
 								<p>
 									<b> {postObj["Batch C details"]?.posts[0].title} </b>
 									{postObj["Batch C details"]?.posts[0].body}
@@ -284,7 +294,11 @@ function Services({ posts }) {
 							}>
 							<div className="col-xs-4 w3_agile_services_grid_left">
 								<div className="agile_services_grid_left1 hvr-radial-out">
-									<img src="images/13.png" alt=" " className="img-responsive" />
+									<img
+										src={postObj["Services Intro"]?.pictures[0].url}
+										alt=" "
+										className="img-responsive"
+									/>
 								</div>
 							</div>
 							<div className="col-xs-8 w3_agile_services_grid_right">
@@ -301,7 +315,11 @@ function Services({ posts }) {
 							}>
 							<div className="col-xs-4 w3_agile_services_grid_left">
 								<div className="agile_services_grid_left1 hvr-radial-out">
-									<img src="images/14.png" alt=" " className="img-responsive" />
+									<img
+										src={postObj["Services Intro"]?.pictures[1].url}
+										alt=" "
+										className="img-responsive"
+									/>
 								</div>
 							</div>
 							<div className="col-xs-8 w3_agile_services_grid_right">
@@ -318,7 +336,11 @@ function Services({ posts }) {
 							}>
 							<div className="col-xs-4 w3_agile_services_grid_left">
 								<div className="agile_services_grid_left1 hvr-radial-out">
-									<img src="images/15.png" alt=" " className="img-responsive" />
+									<img
+										src={postObj["Services Intro"]?.pictures[2].url}
+										alt=" "
+										className="img-responsive"
+									/>
 								</div>
 							</div>
 							<div className="col-xs-8 w3_agile_services_grid_right">
@@ -335,7 +357,11 @@ function Services({ posts }) {
 							}>
 							<div className="col-xs-4 w3_agile_services_grid_left">
 								<div className="agile_services_grid_left1 hvr-radial-out">
-									<img src="images/16.png" alt=" " className="img-responsive" />
+									<img
+										src={postObj["Services Intro"]?.pictures[3].url}
+										alt=" "
+										className="img-responsive"
+									/>
 								</div>
 							</div>
 							<div className="col-xs-8 w3_agile_services_grid_right">
@@ -349,7 +375,11 @@ function Services({ posts }) {
 				</div>
 			</div>
 
-			<div className="services-bottom">
+			<div
+				className="services-bottom"
+				style={{
+					background: `url(${postObj["Investment Plans"]?.pictures[0].url}) no-repeat 0px 0px`,
+				}}>
 				<div className="container">
 					<h3 className="agileits_w3layouts_head agileinfo_head w3_head">
 						{postObj["Investment Plans"]?.posts[0].title.slice(0, 11)}{" "}
@@ -364,7 +394,11 @@ function Services({ posts }) {
 					<div className="w3ls_news_grids">
 						<div className="col-md-4 w3_agileits_services_bottom_grid">
 							<div className="wthree_services_bottom_grid1">
-								<img src="images/5.jpg" alt=" " className="img-responsive" />
+								<img
+									src={postObj["Investment Plans"]?.pictures[1].url}
+									alt=" "
+									className="img-responsive"
+								/>
 								<div className="wthree_services_bottom_grid1_pos">
 									<h4>{postObj["Investment Plans"]?.posts[1].title}</h4>
 								</div>
@@ -382,7 +416,11 @@ function Services({ posts }) {
 						</div>
 						<div className="col-md-4 w3_agileits_services_bottom_grid">
 							<div className="wthree_services_bottom_grid1">
-								<img src="images/6.jpg" alt=" " className="img-responsive" />
+								<img
+									src={postObj["Investment Plans"]?.pictures[2].url}
+									alt=" "
+									className="img-responsive"
+								/>
 								<div className="wthree_services_bottom_grid1_pos">
 									<h4>{postObj["Investment Plans"]?.posts[2].title}</h4>
 								</div>
@@ -400,7 +438,11 @@ function Services({ posts }) {
 						</div>
 						<div className="col-md-4 w3_agileits_services_bottom_grid">
 							<div className="wthree_services_bottom_grid1">
-								<img src="images/3.jpg" alt=" " className="img-responsive" />
+								<img
+									src={postObj["Investment Plans"]?.pictures[3].url}
+									alt=" "
+									className="img-responsive"
+								/>
 								<div className="wthree_services_bottom_grid1_pos">
 									<h4>{postObj["Investment Plans"]?.posts[3].title}</h4>
 								</div>

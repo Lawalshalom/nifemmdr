@@ -32,8 +32,15 @@ function Footer() {
 		postObj[post.header] = post;
 	});
 
+	console.log({ postObj });
+
 	return (
-		<div className="footer">
+		<div
+			className="footer"
+			style={{
+				backgroundAttachment: "fixed",
+				background: `url(${postObj["Contact Address"]?.pictures[0].url}) no-repeat 0px 0px`,
+			}}>
 			<div className="container">
 				<div className="w3agile_footer_grids">
 					<div className="col-md-3 agileinfo_footer_grid">

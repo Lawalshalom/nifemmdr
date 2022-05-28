@@ -27,12 +27,13 @@ function Header({ page, }) {
 	};
 
 	const postObj = {};
-
 	posts.forEach((post) => {
 		postObj[post.header] = post;
 	});
 	return (
-		<div className={page === "home" ? "banner" : "banner1"}>
+		<div className={page === "home" ? "banner" : "banner1"} style={{
+			background: `url(${postObj["landing page"]?.pictures[0].url}) no-repeat 0px 0px`,
+		}}>
 			<div className="container">
 				<div className="w3_agileits_banner_main_grid">
 					<div className="w3_agile_logo">

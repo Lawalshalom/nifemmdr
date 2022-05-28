@@ -11,7 +11,6 @@ function About({ posts }) {
 		postObj[post.header] = post;
 		post.header === "New About Page Post" && aboutNewPosts.push(post);
 	});
-
 	return (
 		<div>
 			<Header page="about" />
@@ -36,7 +35,11 @@ function About({ posts }) {
 						</div>
 						<section>
 							<div className="modal-body">
-								<img src="images/4.jpg" alt=" " className="img-responsive" />
+								<img
+									src={postObj["Popup Modal"]?.pictures[0].url}
+									alt=" "
+									className="img-responsive"
+								/>
 								<p>
 									{postObj["Popup Modal"]?.posts[0].body}
 									<i>{postObj["Popup Modal"]?.posts[1].body}</i>
@@ -181,7 +184,12 @@ function About({ posts }) {
 				</div>
 			</div>
 
-			<div className="about-bottom">
+			<div
+				className="about-bottom"
+				style={{
+					background: `url(${postObj["Strong Points"]?.pictures[0].url}) no-repeat 0px 0px`,
+					backgroundAttachment: "fixed",
+				}}>
 				<div className="container">
 					<h3>
 						<span>{postObj["Strong Points"]?.posts[3].body.slice(0, 12)}</span>
@@ -211,7 +219,11 @@ function About({ posts }) {
 							<div
 								className="w3layouts_news_grid"
 								style={{ display: "flex", justifyContent: "center" }}>
-								<img src="images/27.png" alt=" " className="img-responsive" />
+								<img
+									src={postObj["Team Details"]?.pictures[0].url}
+									alt=" "
+									className="img-responsive"
+								/>
 							</div>
 							<h4>Femi Oloyade</h4>
 							<p>Chief Executive Officer & Founder</p>
@@ -220,7 +232,11 @@ function About({ posts }) {
 							<div
 								className="w3layouts_news_grid"
 								style={{ display: "flex", justifyContent: "center" }}>
-								<img src="images/29.png" alt=" " className="img-responsive" />
+								<img
+									src={postObj["Team Details"]?.pictures[1].url}
+									alt=" "
+									className="img-responsive"
+								/>
 							</div>
 							<h4>Seun Lalude</h4>
 							<p>Chief Operating Officer/MD</p>
@@ -229,7 +245,11 @@ function About({ posts }) {
 							<div
 								className="w3layouts_news_grid"
 								style={{ display: "flex", justifyContent: "center" }}>
-								<img src="images/28.png" alt=" " className="img-responsive" />
+								<img
+									src={postObj["Team Details"]?.pictures[2].url}
+									alt=" "
+									className="img-responsive"
+								/>
 							</div>
 							<h4>Nike Jolaiya</h4>
 							<p>Chief Marketing Officer</p>

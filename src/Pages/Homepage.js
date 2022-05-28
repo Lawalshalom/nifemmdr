@@ -36,7 +36,11 @@ function Homepage({ posts }) {
 						</div>
 						<section>
 							<div className="modal-body">
-								<img src="images/4.jpg" alt=" " className="img-responsive" />
+								<img
+									src={postObj["Popup Modal"]?.pictures[0].url}
+									alt=" "
+									className="img-responsive"
+								/>
 								<p>
 									{postObj["Popup Modal"]?.posts[0].body}
 									<i>{postObj["Popup Modal"]?.posts[1].body}</i>
@@ -48,7 +52,11 @@ function Homepage({ posts }) {
 			</div>
 
 			<div className="banner-bottom">
-				<div className="col-md-4 agileits_banner_bottom_left">
+				<div
+					className="col-md-4 agileits_banner_bottom_left"
+					style={{
+						background: `url(${postObj["landing page"]?.pictures[1].url}) no-repeat 0px 0px`,
+					}}>
 					<div className="agileinfo_banner_bottom_pos">
 						<div className="w3_agileits_banner_bottom_pos_grid">
 							<div className="col-xs-4 wthree_banner_bottom_grid_left">
@@ -64,7 +72,11 @@ function Homepage({ posts }) {
 						</div>
 					</div>
 				</div>
-				<div className="col-md-4 agileits_banner_bottom_left1">
+				<div
+					className="col-md-4 agileits_banner_bottom_left1"
+					style={{
+						background: `url(${postObj["landing page"]?.pictures[2].url}) no-repeat 0px 0px`,
+					}}>
 					<div className="agileinfo_banner_bottom_pos">
 						<div className="w3_agileits_banner_bottom_pos_grid">
 							<div className="col-xs-4 wthree_banner_bottom_grid_left">
@@ -80,7 +92,11 @@ function Homepage({ posts }) {
 						</div>
 					</div>
 				</div>
-				<div className="col-md-4 agileits_banner_bottom_left2">
+				<div
+					className="col-md-4 agileits_banner_bottom_left2"
+					style={{
+						background: `url(${postObj["landing page"]?.pictures[3].url}) no-repeat 0px 0px`,
+					}}>
 					<div className="agileinfo_banner_bottom_pos">
 						<div className="w3_agileits_banner_bottom_pos_grid">
 							<div className="col-xs-4 wthree_banner_bottom_grid_left">
@@ -118,7 +134,7 @@ function Homepage({ posts }) {
 						<li className="mis-slide">
 							<figure>
 								<img
-									src="https://res.cloudinary.com/lawfirm1000/image/upload/v1651496533/21_daw2y5.jpg"
+									src={postObj["picture carousel"]?.pictures[0].url}
 									alt=" "
 									className="img-responsive"
 								/>
@@ -128,7 +144,7 @@ function Homepage({ posts }) {
 						<li className="mis-slide">
 							<figure>
 								<img
-									src="https://res.cloudinary.com/lawfirm1000/image/upload/v1651496532/24_yll91l.jpg"
+									src={postObj["picture carousel"]?.pictures[1].url}
 									alt=" "
 									className="img-responsive"
 								/>
@@ -136,22 +152,38 @@ function Homepage({ posts }) {
 						</li>
 						<li className="mis-slide">
 							<figure>
-								<img src="images/22.jpg" alt=" " className="img-responsive" />
+								<img
+									src={postObj["picture carousel"]?.pictures[2].url}
+									alt=" "
+									className="img-responsive"
+								/>
 							</figure>
 						</li>
 						<li className="mis-slide">
 							<figure>
-								<img src="images/25.jpg" alt=" " className="img-responsive" />
+								<img
+									src={postObj["picture carousel"]?.pictures[3].url}
+									alt=" "
+									className="img-responsive"
+								/>
 							</figure>
 						</li>
 						<li className="mis-slide">
 							<figure>
-								<img src="images/26.webp" alt=" " className="img-responsive" />
+								<img
+									src={postObj["picture carousel"]?.pictures[4].url}
+									alt=" "
+									className="img-responsive"
+								/>
 							</figure>
 						</li>
 						<li className="mis-slide">
 							<figure>
-								<img src="images/23.webp" alt=" " className="img-responsive" />
+								<img
+									src={postObj["picture carousel"]?.pictures[5].url}
+									alt=" "
+									className="img-responsive"
+								/>
 							</figure>
 						</li>
 					</ol>
@@ -170,7 +202,11 @@ function Homepage({ posts }) {
 				<div className="col-md-6 wthree_welcome_bottom_right">
 					<div className="agileinfo_grid">
 						<figure className="agileits_effect_moses">
-							<img src="images/4.jpg" alt=" " className="img-responsive" />
+							<img
+								src={postObj["picture carousel"]?.pictures[6].url}
+								alt=" "
+								className="img-responsive"
+							/>
 							<figcaption>
 								<h4>
 									{postObj["picture carousel"]?.posts[3].title.slice(0, 11)}{" "}
@@ -211,7 +247,7 @@ function Homepage({ posts }) {
 								}}>
 								<img
 									style={{ height: 212 }}
-									src="images/22.jpg"
+									src={postObj["Maitake Introduction"]?.pictures[0].url}
 									alt=" "
 									className="img-responsive"
 								/>
@@ -246,7 +282,7 @@ function Homepage({ posts }) {
 								}}>
 								<img
 									style={{ height: 212 }}
-									src="images/25.jpg"
+									src={postObj["Maitake Introduction"]?.pictures[1].url}
 									alt=" "
 									className="img-responsive"
 								/>
@@ -281,7 +317,7 @@ function Homepage({ posts }) {
 								}}>
 								<img
 									style={{ height: 212 }}
-									src="images/24.jpg"
+									src={postObj["Maitake Introduction"]?.pictures[2].url}
 									alt=" "
 									className="img-responsive"
 								/>
